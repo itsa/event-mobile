@@ -34,7 +34,8 @@
         "istanbul": "^0.3.0",
         "jshint": "^2.5.5",
         "mocha": "^1.21.4",
-        "node-win": "itsa/node-win"
+        "node-win": "itsa/node-win",
+        "event": "itsa/event"
     },
 
     "engines": {
