@@ -6,6 +6,10 @@
  *
  * Should be called using  the provided `init`-method like this:
  *
+ *
+ * <i>Copyright (c) 2014 ITSA - https://github.com/itsa</i>
+ * New BSD License - http://choosealicense.com/licenses/bsd-3-clause/
+ *
  * @example
  * Event = require('event');
  * DOMEvent = require('event-dom');
@@ -15,10 +19,6 @@
  * @submodule event-hammerjs
  * @class Event
  * @since 0.0.1
- *
- * <i>Copyright (c) 2014 Parcela - https://github.com/Parcela</i>
- * New BSD License - https://github.com/ItsAsbreuk/itsa-library/blob/master/LICENSE
- *
 */
 
 var NAME = '[event-mobile]: ',
