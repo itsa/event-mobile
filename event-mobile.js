@@ -16,7 +16,7 @@
  * DOMEvent.mergeInto(Event);
  *
  * @module event
- * @submodule event-hammerjs
+ * @submodule event-mobile
  * @class Event
  * @since 0.0.1
 */
@@ -36,6 +36,10 @@ module.exports = function (window) {
         document = window.document,
         hammertime = Event.hammertime = new Hammer(document.body),
         singletap, doubletap, tripletap;
+
+    if (window._ITSAmodules.EventMobile) {
+        return Event; // Event was already extended
+    }
 
     // create reference to the HammerClass:
     /**
@@ -94,6 +98,9 @@ module.exports = function (window) {
             originalSet.call(this, options);
         };
     })(Hammer.Manager.prototype.set);
+
+    // store module:
+    window._ITSAmodules.EventMobile = Event;
 
     return Event;
 };
