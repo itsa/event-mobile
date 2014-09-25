@@ -24,7 +24,6 @@
 var NAME = '[event-mobile]: ',
     Hammer = require('hammerjs');
 
-
 module.exports = function (window) {
     /**
      * The (only) Hammer-instance that `Event` uses. It is bound to the `body`-element.
