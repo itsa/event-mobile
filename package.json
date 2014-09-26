@@ -27,7 +27,7 @@
     },
     "dependencies": {
         "event-dom": "itsa/event-dom",
-        "hammerjs": "^2.0.2"
+        "hammerjs": "^2.0.3"
     },
     "devDependencies": {
         "chai": "^1.9.1",
