@@ -26,6 +26,7 @@
         "url": "https://github.com/itsa/event-mobile/issues"
     },
     "dependencies": {
+        "polyfill": "itsa/polyfill",
         "event-dom": "itsa/event-dom",
         "hammerjs": "^2.0.3"
     },
