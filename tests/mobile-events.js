@@ -12,9 +12,6 @@ var expect = require('chai').expect,
 
     EMIT_TAP_EVENT, EMIT_FOCUS_EVENT, EMIT_KEY_EVENT, buttonnode, divnode;
 
-require('event/event-emitter.js');
-require('event/event-listener.js');
-
 EMIT_TAP_EVENT = function(target) {
     if (!fakedom) {
         Event.hammertime.emit('tap', {target: target});
