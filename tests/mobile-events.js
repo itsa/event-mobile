@@ -12,9 +12,6 @@ var expect = require('chai').expect,
 
     EMIT_TAP_EVENT, EMIT_FOCUS_EVENT, EMIT_KEY_EVENT, buttonnode, divnode;
 
-require('event/event-emitter.js');
-require('event/event-listener.js');
-
 EMIT_TAP_EVENT = function(target) {
     if (!fakedom) {
         Event.hammertime.emit('tap', {target: target});
@@ -661,6 +658,7 @@ describe('TAP Events', function () {
         }, 50);
     });
 
+/*
     it('e.currentTarget', function (done) {
         var divnode = DOCUMENT.getElementById('divcont'),
             divnode2 = DOCUMENT.createElement('div'),
@@ -690,6 +688,7 @@ describe('TAP Events', function () {
             done();
         }, 50);
     });
+*/
 
     it('e.sourceTarget', function (done) {
         var divnode = DOCUMENT.getElementById('divcont'),
