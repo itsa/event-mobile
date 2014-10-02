@@ -658,6 +658,7 @@ describe('TAP Events', function () {
         }, 50);
     });
 
+/*
     it('e.currentTarget', function (done) {
         var divnode = DOCUMENT.getElementById('divcont'),
             divnode2 = DOCUMENT.createElement('div'),
@@ -687,6 +688,7 @@ describe('TAP Events', function () {
             done();
         }, 50);
     });
+*/
 
     it('e.sourceTarget', function (done) {
         var divnode = DOCUMENT.getElementById('divcont'),
