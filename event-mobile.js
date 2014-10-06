@@ -1,19 +1,15 @@
 "use strict";
 
 /**
- * Integrates DOM-events to core-event-base. more about DOM-events:
+ * Integrates mobile-events to event-dom. more about DOM-events:
  * http://www.smashingmagazine.com/2013/11/12/an-introduction-to-dom-events/
- *
- * Should be called using  the provided `init`-method like this:
  *
  *
  * <i>Copyright (c) 2014 ITSA - https://github.com/itsa</i>
  * New BSD License - http://choosealicense.com/licenses/bsd-3-clause/
  *
  * @example
- * Event = require('event');
- * DOMEvent = require('event-dom');
- * DOMEvent.mergeInto(Event);
+ * Event = require('event-mobile')(window);
  *
  * @module event
  * @submodule event-mobile
