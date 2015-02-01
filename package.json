@@ -25,9 +25,12 @@
     "bugs": {
         "url": "https://github.com/itsa/event-mobile/issues"
     },
+    "directories": {
+        "lib": "./lib"
+    },
     "dependencies": {
-        "event-dom": "itsa/event-dom",
-        "hammerjs": "^2.0.3"
+        "utils": "itsa/utils",
+        "event-dom": "itsa/event-dom"
     },
     "devDependencies": {
         "chai": "^1.9.1",
