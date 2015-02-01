@@ -9,7 +9,7 @@ var expect = require('chai').expect,
     should = require('chai').should(),
     DOCUMENT = window.document,
     fakedom = window.navigator.userAgent==='fake',
-    Event = fakedom ? require('event-dom')(window) : require('../event-mobile.js')(window),
+    Event = require('../event-mobile.js')(window),
 
     EMIT_TAP_EVENT, EMIT_FOCUS_EVENT, EMIT_KEY_EVENT, buttonnode, divnode;
 
