@@ -751,36 +751,6 @@ describe('TAP Events', function () {
         }, 50);
     });
 
-    it('e.currentTarget on document', function (done) {
-        var divnode = DOCUMENT.getElementById('divcont'),
-            divnode2 = DOCUMENT.createElement('div'),
-            divnode3 = DOCUMENT.createElement('div'),
-            deepestbutton = DOCUMENT.createElement('button');
-        divnode2.id = 'divnode2';
-        divnode3.id = 'divnode3';
-        divnode2.className = 'divnode2class';
-        divnode3.appendChild(deepestbutton);
-        divnode2.appendChild(divnode3);
-        divnode.appendChild(divnode2);
-
-        Event.after('tap', function(e) {
-            (e.currentTarget===DOCUMENT).should.be.true;
-        }, '.divnode2class');
-
-        Event.after('tap', function(e) {
-            (e.currentTarget===DOCUMENT).should.be.true;
-        }, '.divnode2class button');
-
-        EMIT_TAP_EVENT(deepestbutton);
-
-        // CAUTIOUS: do not set timeout to 0 --> IE9 puts the after-dom-events
-        // a bit later in the js-stack: timeOut of 0 would happen before the after-evens
-        setTimeout(function() {
-            divnode.removeChild(divnode2);
-            done();
-        }, 50);
-    });
-
     it('e.sourceTarget on document', function (done) {
         var divnode = DOCUMENT.getElementById('divcont'),
             divnode2 = DOCUMENT.createElement('div'),
